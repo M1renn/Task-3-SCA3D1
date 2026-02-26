@@ -1,0 +1,45 @@
+{
+  "orderId": "B2B-2024-100",
+  "orderType": "b2b",
+  "source": "b2b",
+  "receivedAt": "2024-11-15T14:00:00Z",
+  "customer": {
+    "name": "TechCorp Ltd",
+    "email": "procurement@techcorp.example.com",
+    "address": {
+      "street": "42 Oxford Street",
+      "city": "London",
+      "postalCode": "W1D 1BJ",
+      "country": "GB"
+    }
+  },
+  "items": [
+    {
+      "productId": "PROD-001",
+      "productName": "Wireless Mouse",
+      "quantity": 10,
+      "unitPrice": 24.99,
+      "currency": "EUR",
+      "taxRate": 0.21
+    },
+    {
+      "productId": "PROD-003",
+      "productName": "Mechanical Keyboard",
+      "quantity": 5,
+      "unitPrice": 89.99,
+      "currency": "EUR",
+      "taxRate": 0.21
+    },
+    {
+      "productId": "PROD-004",
+      "productName": "Monitor Stand",
+      "quantity": 20,
+      "unitPrice": 34.99,
+      "currency": "EUR",
+      "taxRate": 0.21
+    }
+  ],
+  "currency": "GBP",
+  "status": "new",
+  "orderDate": "2024-11-15T14:00:00Z"
+}

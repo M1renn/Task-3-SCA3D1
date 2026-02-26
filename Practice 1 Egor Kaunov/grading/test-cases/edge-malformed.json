@@ -1,0 +1,7 @@
+{
+  "orderId": "WEB-2024-002",
+  "orderType": "standard"
+  "customer": {
+    "name": "Test User"
+  }
+}

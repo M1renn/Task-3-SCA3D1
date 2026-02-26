@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  nodered:
+    build:
+      context: .
+      dockerfile: Dockerfile.nodered
+    ports:
+      - "${NODE_RED_PORT}:1880"
+    volumes:
+      - ./flows.json:/data/flows.json
+    networks:
+      - eai-practice-network
+    environment:
+      - NODE_RED_HOME=/data
+
+  pricing-api:
+    build:
+      context: ./mock-api
+      dockerfile: Dockerfile
+    ports:
+      - "${PRICING_API_PORT}:3000"
+    networks:
+      - eai-practice-network
+    environment:
+      - PRICING_API_KEY=${PRICING_API_KEY}
+      - PORT=3000
+
+  downstream-api:
+    build:
+      context: ./downstream-api
+      dockerfile: Dockerfile
+    ports:
+      - "${DOWNSTREAM_API_PORT}:3001"
+    networks:
+      - eai-practice-network
+    volumes:
+      - ./canonical-schema.json:/app/canonical-schema.json:ro
+    environment:
+      - PORT=3001
+
+networks:
+  eai-practice-network:
+    driver: bridge

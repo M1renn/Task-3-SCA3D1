@@ -1,0 +1,9 @@
+# Environment variables (local overrides)
+.env
+
+# Node-RED runtime data
+node_modules/
+data/
+
+# Build artifacts
+*.log

@@ -1,0 +1,23 @@
+{
+  "orderId": "WEB-2024-004",
+  "orderType": "standard",
+  "customer": {
+    "email": "test@example.com",
+    "address": {
+      "street": "Test Street 1",
+      "city": "Test City",
+      "postalCode": "TC-001",
+      "country": "TC"
+    }
+  },
+  "items": [
+    {
+      "productId": "PROD-001",
+      "productName": "Test Product",
+      "quantity": 1
+    }
+  ],
+  "orderDate": "2024-11-15T10:30:00Z",
+  "status": "new",
+  "currency": "EUR"
+}

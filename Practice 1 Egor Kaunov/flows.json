@@ -1,0 +1,56 @@
+[
+  {
+    "id": "example-tab",
+    "type": "tab",
+    "label": "Example",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "hello-input",
+    "type": "http in",
+    "z": "example-tab",
+    "name": "",
+    "url": "/hello",
+    "method": "get",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 120,
+    "y": 120,
+    "wires": [
+      [
+        "hello-function"
+      ]
+    ]
+  },
+  {
+    "id": "hello-function",
+    "type": "function",
+    "z": "example-tab",
+    "name": "Hello Response",
+    "func": "msg.payload = { message: \"Hello from Node-RED\" };\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 320,
+    "y": 120,
+    "wires": [
+      [
+        "hello-output"
+      ]
+    ]
+  },
+  {
+    "id": "hello-output",
+    "type": "http response",
+    "z": "example-tab",
+    "name": "",
+    "statusCode": "",
+    "headers": {},
+    "x": 540,
+    "y": 120,
+    "wires": []
+  }
+]

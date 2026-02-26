@@ -1,0 +1,29 @@
+{
+  "orderId": "MOB-2024-050",
+  "orderType": "express",
+  "source": "mobile",
+  "receivedAt": "2024-11-15T10:30:00Z",
+  "customer": {
+    "name": "Janis Ozols",
+    "email": "janis.ozols@example.com",
+    "address": {
+      "street": "Valnu iela 25",
+      "city": "Riga",
+      "postalCode": "LV-1050",
+      "country": "LV"
+    }
+  },
+  "items": [
+    {
+      "productId": "PROD-001",
+      "productName": "Bluetooth Speaker",
+      "quantity": 1,
+      "unitPrice": 24.99,
+      "currency": "EUR",
+      "taxRate": 0.21
+    }
+  ],
+  "currency": "USD",
+  "status": "new",
+  "orderDate": "2024-11-15T10:30:00Z"
+}
